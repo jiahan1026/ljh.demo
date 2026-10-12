@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人简历</title>
+    <style>
+        .basic-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
+        .basic-info img {
+            width: 140px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 480px) {
+            .basic-info {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>个人简历</h1>
     <h2>基本信息</h2> 
-    <p> 姓名:刘家含</p>
-    <p> 性别:女</p>
-    <p> 年龄:21</p>
-    <p> 电话:1825777792</p>
-    <p> 邮箱:18245777792@139com</p>
+    <div class="basic-info">
+        <div>
+            <p> 姓名:刘家含</p>
+            <p> 性别:女</p>
+            <p> 年龄:21</p>
+            <p> 电话:1825777792</p>
+            <p> 邮箱:18245777792@139com</p>
+        </div>
+        <img src="./蓝底照片.jpg" alt="人像">
+    </div>
+    <h2>教育背景</h2>
+    <p> 学校:张家口学院</p>
+    <p> 专业:数字媒体技术</p>
+    <p> 学历:本科</p>
 </body>
 </html>
